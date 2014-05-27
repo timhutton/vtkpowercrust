@@ -1,0 +1,10 @@
+In order to run the vtkPowerCrustSurfaceReconstructionExample.cxx do the following steps:
+
+cd examples
+mkdir build
+cd build
+cmake ..
+make
+./vtkPowerCrustSurfaceReconstructionExample ../data/polydata1.ply ../data/polydata2.ply ../data/polydata3.ply ../data/cactus.3337.ply
+
+The reconstructed surfaces will be written in the build directory.
