@@ -11325,7 +11325,7 @@ REAL insphere(REAL *pa,REAL *pb,REAL *pc,REAL *pd,REAL *pe)
 
 //#include "hull.h"   TJH: this file is now above
 
-double erand48 (unsigned short X[3]);
+//double erand48 (unsigned short X[3]);
 
 unsigned short X[3];
 
@@ -11401,7 +11401,7 @@ nrand48(unsigned short xseed[3])
 //#include "rand48.h"   TJH: this file is now above
 
 /* declare erand48 - DE */
-extern double erand48(unsigned short xseed[3]);
+//extern double erand48(unsigned short xseed[3]);
 
 extern unsigned short _rand48_seed[3];
 
