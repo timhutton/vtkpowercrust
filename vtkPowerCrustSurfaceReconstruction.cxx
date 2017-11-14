@@ -2,8 +2,8 @@
 
     vtkPowerCrustSurfaceReconstruction algorithm reconstructs surfaces from
     unorganized point data.
-    Copyright (C) 2014  Arash Akbarinia, Tim Hutton, Bruce Lamond
-                        Dieter Pfeffer, Oliver Moss
+    Copyright (C) 2017  Arash Akbarinia, Tim Hutton, Bruce Lamond
+                        Dieter Pfeffer, Oliver Moss, Alessandro Volz
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -3534,7 +3534,7 @@ void * vtkPowerCrustSurfaceReconstructionImpl::compute_pole2 ( simplex *s, void 
               pole2[i]=s;
               continue;
             }
-          else if ( !pole2[i]->vv ) /* 2nd pole points null */
+          else if ( pole2[i]->isVvNull ) /* 2nd pole points null */
             {
               continue;
             }
